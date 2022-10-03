@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+    text-decoration: none;
+  
+    font-family: 'Poppins';
+   
+
+}
+
+.landing-page{
+    background:url('../img/Background/overlay_lp.png'), url('../img/Background/background_lp.png') ;
+    background-size: 62rem 30rem,cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100vh;
+    background-color: #F5F5F5;
+
+    
+    
+    
+}
+
+
+
+
+
+
+header{
+    
+ 
+   
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size:  3.5rem;
+    
+    
+}
+.logo{
+    transition: transform 0.3s ease;
+    margin-left: 20rem;
+}
+.logo:hover{
+    transform: scale(1.1);
+}    
+   
+header a{
+   color: rgb(124, 124, 124);
+   font-weight: 400;
+   
+   
+}      
+
+
+
+
+nav{
+    display: flex;
+    
+    width:100%;
+    justify-content: flex-end ;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.2rem;
+    margin-right: 10rem;
+    
+    
+}
+
+nav .white {
+    color: white;
+}
+ nav a:hover{
+    color: white;
+ }
+
+
+.link{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size:inherit;
+    color:rgb(124, 124, 124);
+    font-weight: 400;
+}
+
+.link:hover{
+    color: white;
+}
+
+    
+.dropdown{
+    position: relative;
+    
+   
+
+}
+
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    position: absolute;
+    top:calc(100% + 1.5rem) ;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.124);
+    border-radius: 0.75rem;
+    opacity:0 ;
+    transform: translateY(-15px);
+    transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out  ;
+}
+nav .dropdown-menu a:hover{
+    color: white;
+    
+
+}
+
+ nav .dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+.landing-page > .container > .left .dropdown-menu{
+    
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.landing-page >.container >.left .dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(-5px);
+    color: white;
+
+    
+}
+
+
+
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    
+    
+    
+   
+    
+   
+}
+.landing-text{
+    width: 56rem;
+ 
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    
+
+    
+}
+.landing-text h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    
+    
+    
+    
+    
+}
+.landing-text p{
+    
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    color: rgb(124, 124, 124);
+}
+
+
+.landing-page > .container > .left .link{
+    margin-top: 3rem;
+    border: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.landing-page > .container{
+    display: flex;
+    align-items: center;
+    margin-left: 20rem;
+    flex-wrap: wrap;
+    height: 50rem;
+   
+    
+}    
+
+.right{
+    color: black;
+    background-color: white;
+    height: 250px;
+    width: 350px;
+
+   
+
+}    
+.landing-page >.container >.scroll {
+    position:absolute;
+    top: 100%;
+    
+    
+    
+
+}
+.landing-page >.container >.scroll a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+}    
+
+
+.products {
+    text-align: center; 
+    background-color: #F5F5F5;
+    
+}
+.products h1{
+    font-size: 4rem;
+    font-weight: 400;
+    
+}
+.products p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 25rem;
+    margin: 1.5rem;
+    align-self: center;
+    color: gray;
+}
+
+.products >.container{
+    padding: 1rem;
+   
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+
+}
+
+.products >.container> .product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   
+    background-color: rgb(208, 208, 208);
+    height: 45rem;
+    width: 30rem;
+    
+    border-radius: 1.5rem;
+    position: relative;
+    font-size: 2rem;
+
+}
+
+.products >.container> .product button{
+    position: absolute;
+    left: 20%;
+    bottom: 5%;
+    width: 60%;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color:rgb(208, 208, 208);
+    box-shadow: 0 3px 4px rgb(196, 192, 192) ;
+
+
+
+}
+.products .bg{
+    background-color: white;
+    margin: 1rem;
+    
+    border-radius: 1.5rem;
+    
+}
+
+
+
+.services > .service > img{
+    width: auto;
+    height: 25rem;
+    border-radius: 36px;
+}
+
+.services > h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color:white;
+    margin-top: 2rem;
+    
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    height: 100%;
+    background-color: black;
+   
+    
+   
+
+}
+
+.services > .service{
+    display: flex;
+    
+    background-color: #313131;
+    padding: 1.5rem;
+    border-radius: 36px;
+    margin-bottom: 2rem;
+    
+    
+}
+
+.services > #right{
+    flex-direction: row-reverse;
+   
+
+}
+.services > .service > .text{
+    padding: 5rem;
+    text-align:left;
+    width: 35rem;
+    
+
+}
+
+.services > .service > .text>h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.services > .service > .text>p{
+    font-size: 1rem;
+    color: #AEAEAE;
+
+}
+
+
+
+.choose-us{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10rem;
+    
+}
+.choose-us img{
+    width: 57.4rem;
+    border-radius: 36px;
+}
+
+.choose-us>.text{
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    
+    
+    
+}
+
+.choose-us> .text h1{
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+.choose-us> .text p{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.choose-us> .text ul{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 3rem;
+    list-style: inside;
+    
+
+    
+}
+
+
+
+footer{
+    background-color: #313131;
+    color: white;
+    display: flex;
+    padding: 10rem;
+    border-top-left-radius: 10rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color:white;
+}
+footer a:hover{
+    color:#AEAEAE;
+}
+footer h1{
+    font-size: 1.5rem;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 10rem;
+   
+    
+}
+footer #info{
+    font-size: 2rem;
+}
+footer #info a {
+    font-size: 2rem;
+    margin: 1rem;
+}
+footer .logo{
+    margin-left: 0;
+}
+ 
